@@ -10,13 +10,13 @@ class StudentRosterWidget extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Student Roster'),
       ),
-      body: Column(
+      body: const Column(
         children: <Widget>[
           ListTile(
-            title: const Text('Student 1'),
+            title: Text('Student 1'),
             tileColor: Colors.redAccent,
           ),
-          const Padding(
+          Padding(
             padding: EdgeInsets.all(8),
             child: ListTile(
               title: Text('Student 2'),
