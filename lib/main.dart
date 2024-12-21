@@ -35,13 +35,8 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      //TODO: replace the page with ours
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Management App'),
-        ),
-        body: const StudentRosterWidget(),
-      ),
+      home: const StudentRosterWidget(),
+
     );
   }
 }
