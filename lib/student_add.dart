@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+
 class StudentAddWidget extends StatelessWidget {
   const StudentAddWidget({super.key});
 
@@ -38,6 +39,7 @@ class StudentAddWidget extends StatelessWidget {
       ),
     );
   }
-  void _addStudent() {}
+  Future<void> _addStudent() async {
+  }
 }
 

@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'student_roster.dart';
+import 'package:sqflite/sqflite.dart';
+import 'config.dart';
 
 
 void main() {
@@ -38,7 +40,7 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: const Text('Management App'),
         ),
-        body: StudentRosterWidget(),
+        body: const StudentRosterWidget(),
       ),
     );
   }
