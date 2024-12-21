@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_model_demo/student_add.dart';
+import 'package:flutter_model_demo/widget/student_add.dart';
 
 class StudentRosterWidget extends StatelessWidget {
   const StudentRosterWidget({Key? key}) : super(key: key);

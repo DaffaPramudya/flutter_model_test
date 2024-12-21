@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'student_roster.dart';
+import 'widget/student_roster.dart';
 import 'package:sqflite/sqflite.dart';
 import 'config.dart';
 
