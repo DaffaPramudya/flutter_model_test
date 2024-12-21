@@ -6,32 +6,39 @@ class StudentRosterWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(children: <Widget>[
-      ListTile(
-        title: Text('Student 1'),
-        tileColor: Colors.redAccent,
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Student Roster'),
       ),
-      Padding(
-        padding: EdgeInsets.all(8),
-        child: ListTile(
-          title: Text('Student 2'),
-          tileColor: Colors.cyanAccent,
-        ),
+      body: Column(
+        children: <Widget>[
+          ListTile(
+            title: const Text('Student 1'),
+            tileColor: Colors.redAccent,
+          ),
+          const Padding(
+            padding: EdgeInsets.all(8),
+            child: ListTile(
+              title: Text('Student 2'),
+              tileColor: Colors.cyanAccent,
+            ),
+          ),
+        ],
       ),
-
-      FloatingActionButton(
+      floatingActionButton: FloatingActionButton(
         onPressed: () => _fabResponse(context),
-        tooltip: 'Increment',
+        tooltip: 'Add Student',
         child: const Icon(Icons.add),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
-    ]);
+      ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.endFloat,
+    );
   }
 
   void _fabResponse(BuildContext context) {
-    //TODO: after the button was clicked, navigate to new Page
+    // Navigasi ke halaman baru saat tombol ditekan
     Navigator.push(
-      context, 
-      MaterialPageRoute(builder: (context)=> const StudentAddWidget())
+      context,
+      MaterialPageRoute(builder: (context) => const StudentAddWidget()),
     );
   }
 }
