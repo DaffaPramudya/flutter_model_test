@@ -10,18 +10,32 @@ class StudentRosterWidget extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Student Roster'),
       ),
-      body: const Column(
+      body: Column(
         children: <Widget>[
           ListTile(
-            title: Text('Student 1'),
+            title: const Text('Student 1'),
+            subtitle: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: const [
+                Text('Name: aaa'),
+                Text('Address: a'),
+                Text('Email: a@a.com'),
+              ],
+            ),
             tileColor: Colors.redAccent,
           ),
-          Padding(
-            padding: EdgeInsets.all(8),
-            child: ListTile(
-              title: Text('Student 2'),
-              tileColor: Colors.cyanAccent,
+          const SizedBox(height: 8),
+          ListTile(
+            title: const Text('Student 2'),
+            subtitle: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: const [
+                Text('Name: bbb'),
+                Text('Address: b'),
+                Text('Email: b@b.com'),
+              ],
             ),
+            tileColor: Colors.cyanAccent,
           ),
         ],
       ),
